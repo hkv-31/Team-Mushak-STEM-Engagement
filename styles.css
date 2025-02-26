@@ -1,0 +1,668 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between; 
+    align-items: center;
+    padding: 2rem 2rem;
+    background-color: #052050; /* Dark blue starry night */
+    color: white;
+    /*background-image: url('./images_for_landing/starry-night.jpg');*/
+    background-size: cover;
+    background-position: center;
+    height: 100px; 
+   /* border-bottom: white solid 1px;*/
+}
+/*#2b124c #fbe4db*/
+.project-name{
+    font-size: 2.2rem;
+}
+.logo {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    gap: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    /*flex-wrap: wrap;*/
+}
+
+.social-btn {
+    text-decoration: none;
+    color: #052050; 
+    background-color: white; 
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 0.6rem; 
+}
+
+.social-btn:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+    background-color: #052050;  /* Dark blue starry night */
+    /* background-image: url('./images_for_landing/starry-night.jpg'); */ 
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Video Section */
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #052050; /* Match your theme */
+    padding: 2rem 0; /* Add spacing above and below */
+}
+.media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0; /* Add spacing above and below */
+}
+.video-container {
+    width: 90%;
+    max-width: 800px; /* Prevents excessive stretching */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden; /* Prevents overflow issues */
+}
+
+/* Video Styling */
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Changes cursor to indicate interaction */
+    justify-items: center;
+}
+.video video{
+    height: 500px; 
+    width: auto
+}
+
+/* Grid Section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2.5rem;
+    margin: 2rem; 
+    
+}
+
+.grid-item {
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 0.6rem; 
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+.games{
+    align-items: center;
+    margin: 1rem; 
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #052050; /* Dark blue starry night */
+    color: white;
+    /*background-image: url('./images_for_landing/starry-night-2.png');*/
+    background-size: cover;
+    background-position: center;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1; 
+}
+.main-line{
+    font-size: 1.2rem; 
+}
+h3, .forensics{
+    color: #052050;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.evidence{
+    height: 230px; 
+    width: 280px; 
+}
+.event{
+    height: 200px; 
+    width: 260px; 
+}
+.rc{
+    height: 400px; 
+    width: 400px; 
+}
+.rc-full{
+    height: 350px; 
+    width: 450px; 
+}
+/* For the photo gallery section */
+.photos {
+    text-align: center; /* Centers the heading text */
+}
+  
+.photo-gallery {
+    display: flex; /* Use Flexbox for horizontal alignment */
+    justify-content: center; /* Center the images horizontally */
+    gap: 10px; /* Adds spacing between images */
+    flex-wrap: wrap; /* Allow the items to wrap to the next line if there’s not enough space */
+}
+.event {
+    object-fit: cover; /* Ensures the images maintain their aspect ratio while covering the space */
+} 
+.event-e{
+    height: 250px; 
+    width: 200px; 
+}
+.event-d{
+    height: 280px; 
+    width: 390px; 
+}
+.stall{
+    height:400px; 
+    width: 500px;
+}
+.stall-long{
+    height:500px; 
+    width:300px; 
+}
+.different{
+    justify-items: center;
+}
+.group{
+    justify-items: center; 
+}
+.presentations{
+    justify-items: center;
+}
+.ppt{
+    height: 40px; 
+    width: 100px; 
+    justify-items: center;
+    display: inline-block; 
+}
+
+/* Responsive Design */
+
+/* General adjustments */
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Make navbar responsive */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .project-name {
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Hero Section */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .main-line {
+        font-size: 1rem;
+    }
+}
+
+/* Video Section */
+@media (max-width: 768px) {
+    .video-container {
+        width: 95%;
+    }
+
+    .video video {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* Grid Section */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+
+    .grid-item {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Adjustments for Small Screens (Phones) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .project-name {
+        font-size: 1.5rem;
+    }
+
+    .social-links {
+        gap: 0.5rem;
+    }
+
+    .social-btn {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+    .forensics{
+        font-size: 1.2rem;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.6rem;
+        padding: 0.5rem;
+    }
+
+    .grid-item {
+        padding: 0.6rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}
+/* Fix Navbar Overlapping Issue */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        margin-left:0px; 
+    }
+
+    .logo {
+        display: block;
+        max-width: 80px;
+        height: auto;
+        margin-bottom: 10px; /* Space between logo and text */
+    }
+
+    .project-name {
+        font-size: 1.5rem;
+        margin-top: 10px; /* Pushes text down */
+    }
+}
+
+/* Properly Center Align Event Photos */
+@media (max-width: 1024px) {
+    /* For the photo gallery section */
+    .photos {
+    text-align: center; /* Centers the heading text */
+    }
+  
+    .photo-gallery {
+    display: flex; /* Use Flexbox for horizontal alignment */
+    justify-content: center; /* Center the images horizontally */
+    gap: 10px; /* Adds spacing between images */
+    flex-wrap: wrap; /* Allow the items to wrap to the next line if there’s not enough space */
+    }
+  
+  /* Set image width and height for the individual images */
+     .event {
+    object-fit: cover; /* Ensures the images maintain their aspect ratio while covering the space */
+    }
+  
+    .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Ensures equal spacing on both sides */
+        gap: 10px;
+    }
+    .photo-gallery img {
+        width: calc(50% - 10px); /* Ensures two images per row with equal spacing */
+        max-width: 200px;
+        height: auto;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .photo-gallery img {
+        width: calc(50% - 5px); /* Adjust width to balance spacing */
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-gallery img {
+        width: 100%; /* Single image per row for small screens */
+        max-width: 180px;
+        height: 100px; 
+    }
+}
+/* Adjust video container */
+@media (max-width: 1024px) {
+    .video-container {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-container {
+        width: 90%;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Add spacing between preparation buttons */
+@media (max-width: 1024px) {
+    .presentations {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .ppt {
+        display: block;
+        margin: 10px auto; /* Adds vertical spacing */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .presentations .grid-item {
+        display: inline-block;
+        margin: 10px; /* Adds uniform spacing */
+        padding: 10px;
+    }
+}
+@media (max-width: 1024px) {
+    .photo-gallery img {
+        justify-content: center;
+        gap: 10px;
+        width: 300px; 
+        height: 200px; 
+
+    }
+
+    .photo-gallery .event-e {
+        width: calc(50% - 10px); /* Two images per row */
+        max-width: 300px;
+        aspect-ratio: 4 / 3; /* Ensures uniform height */
+        object-fit: cover; /* Crops images uniformly */
+        border-radius: 5px;
+    }
+}
+/* For laptop screens (larger than iPad) */
+@media (min-width: 1025px) {
+    .photo-gallery .event-e {
+        width: calc(33.33% - 10px); /* Three images per row */
+        max-width: 350px;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
+
+/* For phone screens */
+@media (max-width: 768px) {
+    .photo-gallery .event-e {
+        width: calc(50% - 10px); /* Two images per row */
+        max-width: 200px;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-gallery .event-e {
+        width: 100%; /* One image per row for very small screens */
+        max-width: 180px;
+    }
+}
+/* Ensure Event Images are Centered and Responsive */
+@media (max-width: 1024px) {
+    .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center images properly */
+        gap: 10px;
+    }
+
+    .photo-gallery .event-e {
+        width: calc(50% - 10px); /* Three images per row */
+        max-width: 250px;
+        height: auto;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-gallery .event-e {
+        width: calc(50% - 10px); /* Two images per row */
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Forces two images per row */
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .photo-gallery .event-e {
+        width: 100%; /* Ensures they fit within the grid */
+        max-width: 180px;
+    }
+}
+/* Responsive Design for Games Stall Page */
+
+/* Adjust video container */
+@media (max-width: 1024px) {
+    .media{
+        justify-items: center;
+    }
+    .video video {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .video video {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .video video {
+        width: 100%;
+    }
+}
+
+/* Photo gallery responsiveness */
+@media (max-width: 1024px) {
+    .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .stall,
+    .stall-long {
+        width: 45%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stall,
+    .stall-long {
+        width: 90%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stall,
+    .stall-long {
+        width: 48%; /* Two images per row */
+        max-width: 180px;
+    }
+}
+
+/* Presentations section responsiveness */
+@media (max-width: 1024px) {
+    .presentations {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .ppt {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ppt {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
